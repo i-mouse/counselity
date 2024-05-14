@@ -1,0 +1,52 @@
+.btnBackground{
+  background: #d4aa9c;
+  /* display: inline-block; */
+}
+.textcolor{
+  color: #49da99;
+  /* display: inline-block; */
+}
+
+.fw-bold{
+  FONT-SIZE: 50px;
+}
+.boxfixsize{
+  height: 50%;
+  width: 50%;
+}
+.OneMargin{
+margin-bottom: 1px;
+}
+/* .mb-6{
+  margin-bottom: 13rem !important;
+} */
+.servicewidth{
+  width: 33%;
+}
+.servicewidth :hover{
+ background: #c4fae2;
+}
+.caps {
+  text-transform: uppercase; /* Converts text to uppercase */
+}
+
+.servicewidth:hover .btnBackground {
+  background: #000000; /* Set the new color */
+  color: white;
+}
+.mr-2{
+  margin-right: 10px;
+}
+.card{
+  border-radius: 30px;
+  width: 100%;
+}
+/* 
+.bg-gray-100 {
+  background-image: url('background1.jpg');
+  background-size: cover; 
+  background-repeat: no-repeat;
+} */
+#logoId{
+  width: 25%;
+}
