@@ -1,0 +1,480 @@
+<!doctype html>
+<html class="h-100" lang="en">
+
+  <head>
+      <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+  <meta name="description" content="A growing collection of ready to use components for the CSS framework Bootstrap 5">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon.png">
+  <meta name="author" content="Holger Koenemann">
+  <meta name="generator" content="Eleventy v2.0.0">
+  <meta name="HandheldFriendly" content="true">
+  <title>Counselity</title>
+  <link rel="stylesheet" href="css/theme.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+   <style>
+
+/* inter-300 - latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local(''),
+       url('./fonts/inter-v12-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('./fonts/inter-v12-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local(''),
+       url('./fonts/inter-v12-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('./fonts/inter-v12-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local(''),
+       url('./fonts/inter-v12-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('./fonts/inter-v12-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+</style>
+
+  </head>
+
+  <body data-bs-spy="scroll" data-bs-target="#navScroll">
+
+    <nav id="navScroll" class="navbar navbar-expand-lg navbar-light fixed-top" tabindex="0">
+  <div class="container">
+    <a class="navbar-brand pe-4 fs-4" href="index.html">
+      <img src="img/logo.png" alt="Counselity" id="logoId">
+    <path d="M8.235 1.559a.5.5 0 0 0-.47 0l-7.5 4a.5.5 0 0 0 0 .882L3.188 8 .264 9.559a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882L12.813 8l2.922-1.559a.5.5 0 0 0 0-.882l-7.5-4zM8 9.433 1.562 6 8 2.567 14.438 6 8 9.433z"/>
+  </svg>
+  <span class="ms-1 fw-bolder">Counselity</span>
+</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+    <a class="nav-link" href="index.html" aria-label="Brings you to the frontpage">
+      Home
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="AboutUs.html">
+      About us
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="Services.html">
+      Services
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="Team.html">
+      Team
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="Internship.html">
+      Internship Program
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="ContactUs.html">
+    Contact Us
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="ClientTestimonials.html">
+      Testimonials
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="blogs.html">
+      Blogs
+    </a>
+  </li>
+    </ul>
+      <!-- <a href="https://templatedeck.com" data-splitbee-event="Click Download" aria-label="Download this template" class="link-dark pb-1 link-fancy me-2">
+        Download this Template       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download ms-1" viewBox="0 0 16 16">
+                <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+              </svg>
+      </a> -->
+
+    </div>
+</div>
+</nav>
+
+    <main>
+
+
+
+<!-- Approach -->
+<div class="py-vh-4 bg-gray-100 w-100 overflow-hidden" id="aboutus">
+  <div class="container">  
+<div class="row d-flex justify-content-between align-items-center">
+<div class="col-lg-6 mb-6">
+  <h2 class=" fw-bold">SERVICES</h2>
+  <h4 class="py-2 border-top border-dark" data-aos="fade-left">Compassionate Support for Your Journey</h4>
+ <p  data-aos="fade-left" data-aos-delay="200">Our experienced therapists offer practical support tailored to your unique challenges. Whether you're grappling with anxiety, navigating relationships, or facing life transitions, we're here to help you build resilience and find clarity. Take the first step toward a more fulfilling life—schedule your appointment today.</p>
+</div>
+<div class="col-lg-6">
+  <div class="row gx-5 d-flex">
+    <div class="col-md-5 offset-md-1">
+      <div class="shadow ratio ratio-1x1 rounded bg-cover mt-5 bp-center float-end" data-aos="fade-up" style="background-image: url(img/services.jpg);">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="col-12 shadow ratio rounded bg-cover mt-5 bp-center" data-aos="fade-left" style="background-image: url(img/services2.jpg);--bs-aspect-ratio: 150%;">
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+  </div>
+</div>
+
+  <div class="bg-light w-100 overflow-hidden" id="testimonials">
+    <div class="container pb-5">
+      <div class="row d-flex justify-content-center">
+        <div class="col-12 mt-4">
+          <div class="row row-cols-1 row-cols-md-2 g-5 d-flex align-items-center">
+
+            <div class="col-12 col-lg-6 col-xl-4 servicewidth hover" data-aos="fade-right">
+              <div class="card p-4 mt-3 border-0 shadow">
+                <div class="card-body">
+                  <h3 class="py-2 text-center">
+                    <span class="" data-aos="fade-left">THERAPY</span>
+                </h3>
+                  <blockquote class="blockquote justify-content-between pt-3 border-top">
+                    <p>A supportive process aiding personal growth, addressing mental health concerns through professional guidance, fostering self-awareness, and promoting healing.</p>
+                  </blockquote>
+              
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-4 servicewidth hover"  data-aos="fade-right">
+              <div class="card p-4 mt-3 border-0 shadow">
+                <div class="card-body">
+                  <h3 class="py-2 text-center">
+                    <span class="" data-aos="fade-left">COUNSELLING</span>
+                </h3>
+                  <blockquote class="blockquote justify-content-between pt-3 border-top">
+                    <p>
+                      Talk-based intervention providing emotional support, coping strategies, and problem-solving, helping individuals navigate challenges and improve their overall well-being.
+                    </p>
+                  </blockquote>
+              
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-4 servicewidth hover"  data-aos="fade-right">
+              <div class="card p-4 mt-3 border-0 shadow">
+                <div class="card-body">
+                  <h3 class="py-2 text-center">
+                    <span class=" caps" data-aos="fade-left">Hypnotherapy</span>
+                </h3>
+                  <blockquote class="blockquote justify-content-between pt-3 border-top">
+                    <p>
+                      Utilizing hypnosis to access the subconscious mind, facilitating behavior change, alleviating phobias, and addressing various psychological issues.</p>
+                  </blockquote>
+              
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-4 servicewidth hover"  data-aos="fade-right">
+              <div class="card p-4 mt-3 border-0 shadow">
+                <div class="card-body">
+                  <h3 class="py-2 text-center">
+                    <span class=" caps" data-aos="fade-left">Expressive Art Therapy</span>
+                </h3>
+                  <blockquote class="blockquote justify-content-between pt-3 border-top">
+                    <p>
+                      Integrating creative expression, such as art, music, or drama, to enhance self-discovery, communication, and emotional healing in a therapeutic setting.
+                    </p>
+                    </blockquote>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-4 servicewidth hover"  data-aos="fade-right">
+              <div class="card p-4 mt-3 border-0 shadow">
+                <div class="card-body">
+                  <h3 class="py-2 text-center">
+                    <span class=" caps" data-aos="fade-left">Career Counselling</span>
+                </h3>
+                  <blockquote class="blockquote justify-content-between pt-3 border-top">
+                    <p>
+                      Guiding individuals in exploring career options, identifying strengths, and making informed decisions to align with their skills, interests, and values.
+                    </p>
+                    </blockquote>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-4 servicewidth hover"  data-aos="fade-right">
+              <div class="card p-4 mt-3 border-0 shadow">
+                <div class="card-body">
+                  <h3 class="py-2 text-center">
+                    <span class=" caps" data-aos="fade-left">Emotional Management</span>
+                </h3>
+                  <blockquote class="blockquote justify-content-between pt-3 border-top">
+                    <p>
+                      Developing skills to recognize, understand, and regulate emotions, fostering emotional intelligence and promoting healthier responses to life's challenges.
+                    </p>
+                    </blockquote>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-4 servicewidth hover"  data-aos="fade-right">
+              <div class="card p-4 mt-3 border-0 shadow">
+                <div class="card-body">
+                  <h3 class="py-2 text-center">
+                    <span class=" caps" data-aos="fade-left">Assessments</span>
+                </h3>
+                  <blockquote class="blockquote justify-content-between pt-3 border-top">
+                    <p>
+                      Evaluating individuals' abilities, personality traits, and skills through various tools and techniques to provide insights for personal and professional development.
+                    </p>
+                    </blockquote>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-4 servicewidth hover"  data-aos="fade-right">
+              <div class="card p-4 mt-3 border-0 shadow">
+                <div class="card-body">
+                  <h3 class="py-2 text-center">
+                    <span class=" caps" data-aos="fade-left">School Workshops</span>
+                </h3>
+                  <blockquote class="blockquote justify-content-between pt-3 border-top">
+                    <p>
+                      Engaging sessions designed to enhance knowledge, skills, and communication within educational settings, fostering a collaborative and supportive learning environment.
+                    </p>
+                    </blockquote>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-4 servicewidth hover"  data-aos="fade-right">
+              <div class="card p-4 mt-3 border-0 shadow">
+                <div class="card-body">
+                  <h3 class="py-2 text-center">
+                    <span class=" caps" data-aos="fade-left">Corporate Workshops</span>
+                </h3>
+                  <blockquote class="blockquote justify-content-between pt-3 border-top">
+                    <p>
+                      Tailored programs addressing workplace challenges, promoting team building, leadership development, and fostering a positive organizational culture.
+                    </p>
+                    </blockquote>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-4 servicewidth hover"  data-aos="fade-right">
+              <div class="card p-4 mt-3 border-0 shadow">
+                <div class="card-body">
+                  <h3 class="py-2 text-center">
+                    <span class=" caps" data-aos="fade-left">Screening Drives</span>
+                </h3>
+                  <blockquote class="blockquote justify-content-between pt-3 border-top">
+                    <p>
+                      Implementing assessments and evaluations to identify potential candidates, ensuring a suitable match for educational institutions or corporate roles.
+                    </p>
+                    </blockquote>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-4 servicewidth hover"  data-aos="fade-right">
+              <div class="card p-4 mt-3 border-0 shadow">
+                <div class="card-body">
+                  <h3 class="py-2 text-center">
+                    <span class=" caps" data-aos="fade-left">Internship Programs</span>
+                </h3>
+                  <blockquote class="blockquote justify-content-between pt-3 border-top">
+                    <p>
+                      Providing hands-on experience and practical exposure to students, bridging the gap between theoretical knowledge and real-world applications in professional settings. 
+                    </p>
+                    </blockquote>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-4 servicewidth hover"  data-aos="fade-right">
+              <div class="card p-4 mt-3 border-0 shadow">
+                <div class="card-body">
+                  <h3 class="py-2 text-center">
+                    <span class=" caps" data-aos="fade-left">Mentorship Program</span>
+                </h3>
+                  <blockquote class="blockquote justify-content-between pt-3 border-top">
+                    <p>
+                      Mentorship Program for budding psychologists to receive personalized guidance from experienced professionals, helping you navigate your career journey with confidence. 
+                    </p>
+                    </blockquote>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- STEPS -->
+
+<div class="py-vh-4 bg-gray-100 w-100 overflow-hidden" id="aboutus">
+  <div class="container">  
+<div class="row d-flex justify-content-between align-items-center">
+<div class="col-lg-6">
+  <h1 class=" fw-bold mt-5 caps">what to expect</h1>
+  <h4 class="py-5 border-top border-dark" data-aos="fade-left">At Counselity, we believe that healing is a journey which require clarity and steps</h4>
+  <p data-aos="fade-left" data-aos-delay="200" class="OneMargin"><b>STEP 1 Connect with Us: </b>
+    <div data-aos="fade-left" data-aos-delay="200">Explore Counselity's network of therapists to find one whose approach aligns with your needs and values. Consider factors such as their specialization, therapeutic techniques, and compatibility with your personality and preferences.</div>
+  </p>
+  <p data-aos="fade-left" data-aos-delay="200" class="OneMargin"><b>STEP 2 Initial Assessment with Your Therapist: </b>
+    <div data-aos="fade-left" data-aos-delay="200">
+      Schedule an initial intake session with your chosen  therapist. This session is an opportunity to discuss your unique concerns, goals, and expectations for therapy. Your therapist will listen empathetically and collaborate with you to create a personalized treatment plan tailored to your needs.
+    </div>
+  </p>
+  <p data-aos="fade-left" data-aos-delay="200" class="OneMargin"><b>STEP 3 Consistent Engagement with Your Therapist: </b>
+    <div data-aos="fade-left" data-aos-delay="200">
+      Commit to attending therapy sessions regularly with your  therapist. By maintaining consistent engagement, you'll have the opportunity to deepen your therapeutic work and make meaningful progress towards your goals over time.
+    </div>
+  </p>
+  <p data-aos="fade-left" data-aos-delay="200" class="OneMargin"><b>STEP 4 Active Participation in Your Counseling Journey:</b>
+    <div data-aos="fade-left" data-aos-delay="200">
+      Embrace active participation in your counseling journey by being open, honest, and curious. Share your thoughts, feelings, and experiences openly with your therapist, and be willing to explore challenging topics and emotions together. Your therapist will provide guidance, support, and evidence-based interventions to help you navigate your unique mental health journey.
+    </div>
+  </p>
+  <p data-aos="fade-left" data-aos-delay="200" class="OneMargin"><b>STEP 5 Reflective Growth: </b>
+    <div data-aos="fade-left" data-aos-delay="200">
+      Take time to reflect on your progress and growth throughout your counseling experience. Celebrate your achievements, no matter how small, and acknowledge the insights and skills you've gained along the way. Through ongoing reflection and collaboration with your therapist, you'll continue to evolve and thrive on your path towards improved mental well-being.
+    </div>
+  </p>
+</div>
+<div class="col-lg-6">
+  <div class="row gx-5 d-flex">
+    <div class="col-md-11">
+      <div class="shadow ratio ratio-16x9 rounded bg-cover bp-center align-self-end" data-aos="fade-right" style="background-image: url(img/services3.jpg);--bs-aspect-ratio: 50%;">
+      </div>
+    </div>
+    <div class="col-md-5 offset-md-1">
+      <div class="shadow ratio ratio-1x1 rounded bg-cover mt-5 bp-center float-end" data-aos="fade-up" style="background-image: url(img/services4.jpg);">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="col-12 shadow ratio rounded bg-cover mt-5 bp-center" data-aos="fade-left" style="background-image: url(img/services5.jpg);--bs-aspect-ratio: 150%;">
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+  </div>
+</div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+</main>
+
+<footer>
+  <div class="container small border-top">
+    <div class="row py-5 d-flex justify-content-between">
+
+<div class="col-12 col-lg-6 col-xl-3 border-end p-5">
+  <img src="img/logo.png" alt="Counselity" id="logoId">
+    <path d="M8.235 1.559a.5.5 0 0 0-.47 0l-7.5 4a.5.5 0 0 0 0 .882L3.188 8 .264 9.559a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882L12.813 8l2.922-1.559a.5.5 0 0 0 0-.882l-7.5-4zM8 9.433 1.562 6 8 2.567 14.438 6 8 9.433z"/>
+  </svg>
+  <address class="text-secondary mt-3">
+    <strong>Counselity, Inc.</strong><br>
+    Hauz Khas | Dwarka | Indirapuram | Gurugram | Faridabad<br>
+    <abbr title="Phone">P:</abbr>
+    +91 8448505990
+  </address>
+</div>
+<div class="col-12 col-lg-6 col-xl-3 border-end p-5">
+  <h3 class="h6 mb-3">Menu</h3>
+  <ul class="nav flex-column">
+    <li class="nav-item">
+      <a class="nav-link link-secondary ps-0" aria-current="page" href="index.html">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link link-secondary ps-0" href="AboutUs.html">About Us</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link link-secondary ps-0" href="Services.html">Services</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link link-secondary ps-0" href="#">Blogs</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link link-secondary ps-0" href="#">Team</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link link-secondary ps-0" href="Internship.html">Intership Program</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link link-secondary ps-0" href="ClientTestimonials.html">Client Testimonials</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link link-secondary ps-0" href="ContactUs.html">Contact Us</a>
+    </li>
+  </ul>
+</div>
+<div class="col-12 col-lg-6 col-xl-3 border-end p-5">
+  <h3 class="h6 mb-3">Reading</h3>
+  <ul class="nav flex-column">
+    <li class="nav-item">
+      <a class="nav-link link-secondary ps-0" aria-current="page" href="blogs.html">Blogs</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link link-secondary ps-0" href="#">Virtual Library</a>
+    </li>
+
+  </ul>
+</div>
+
+</div>
+</div>  
+</footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/aos.js"></script>
+ <script>
+ AOS.init({
+   duration: 800, // values from 0 to 3000, with step 50ms
+ });
+ </script>
+
+ <script>
+  let scrollpos = window.scrollY
+  const header = document.querySelector(".navbar")
+  const header_height = header.offsetHeight
+
+  const add_class_on_scroll = () => header.classList.add("scrolled", "shadow-sm")
+  const remove_class_on_scroll = () => header.classList.remove("scrolled", "shadow-sm")
+
+  window.addEventListener('scroll', function() {
+    scrollpos = window.scrollY;
+
+    if (scrollpos >= header_height) { add_class_on_scroll() }
+    else { remove_class_on_scroll() }
+
+    console.log(scrollpos)
+  })
+</script>
+
+  </body>
+</html>

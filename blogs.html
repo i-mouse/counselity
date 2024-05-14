@@ -1,0 +1,466 @@
+<!doctype html>
+<html class="h-100" lang="en">
+
+  <head>
+      <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+  <meta name="description" content="A growing collection of ready to use components for the CSS framework Bootstrap 5">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon.png">
+  <meta name="author" content="Holger Koenemann">
+  <meta name="generator" content="Eleventy v2.0.0">
+  <meta name="HandheldFriendly" content="true">
+  <title>Counselity</title>
+  <link rel="stylesheet" href="css/theme.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+   <style>
+
+/* inter-300 - latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local(''),
+       url('./fonts/inter-v12-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('./fonts/inter-v12-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local(''),
+       url('./fonts/inter-v12-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('./fonts/inter-v12-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local(''),
+       url('./fonts/inter-v12-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('./fonts/inter-v12-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+.section-padding-100 {
+    padding: 100px 0;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  font-size: 16px;
+  /* // line-height: 1.3rem; */
+  font-family: Roboto, sans-serif;
+}
+  .blog {
+    text-align: center;
+    margin: 40px 0px;
+    .blog_title{
+      margin: 0px 0px 30px;
+      color: #666;
+      font-family: 'Raleway',sans-serif;
+    }
+    .blog_wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      align-content: center;
+      width: 100%;
+      justify-content:center;
+      .blog_item {
+        a{
+          color: inherit; /* blue colors for links too */
+          text-decoration: inherit;
+        }
+        margin: 0px 20px 40px;
+        min-height: 300px;
+        background: #fff 50%;
+        background-size: cover;
+        border-radius: 5px;
+        text-decoration: none;
+        box-shadow: 8px 14px 38px rgba(39,44,49,.06), 1px 3px 8px rgba(39,44,49,.03);
+        transition: all .5s ease;
+        .bi_img {
+          height: 200px;
+          margin: 0px 0px 20px;
+          overflow: hidden;
+          img{
+            width: 90%;
+          }
+        }
+        .bi_title {
+          font-size: 1.2rem;
+          font-weight: 500;
+          margin: 1.5em 0 .5em;
+        }
+
+        .bi_content {
+          padding: 20px;
+          font-size: 0.8rem;
+          text-align: justify;
+          color: #999999;
+        }
+        .reading_time{
+          font-family: 'Raleway', sans-serif;
+          color: #738a94;
+          font-size: 0.8rem;
+          line-height: 33px;
+          letter-spacing: .5px;
+          text-transform: uppercase;
+        }
+        &:hover{
+          box-shadow: 8px 28px 50px rgba(39,44,49,.07), 1px 6px 12px rgba(39,44,49,.04);
+          transition: all .4s ease;
+          transform: translate3D(0,-1px,0) scale(1.02);
+        }
+      }
+    }
+
+    .blog_button {
+      a {
+        text-decoration: inherit;
+        display: block;
+        width: 200px;
+        margin: 0px auto 24px;
+        letter-spacing: 1px;
+        padding: 15px 26px;
+        background: #fc4f4f;
+        color: white;
+        outline-offset: -2px;
+        transition: all .3s ease;
+        &:hover{
+          background: #fff;
+          color: #fc4f4f;
+        }
+      }
+    }
+  }
+@media only screen and (max-width: 900px) {
+  .blog{
+    .blog_wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .blog{
+    .blog_wrapper {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }
+}
+</style>
+
+  </head>
+
+  <body data-bs-spy="scroll" data-bs-target="#navScroll">
+
+    <nav id="navScroll" class="navbar navbar-expand-lg navbar-light fixed-top" tabindex="0">
+  <div class="container">
+    <a class="navbar-brand pe-4 fs-4" href="index.html">
+      <img src="img/logo.png" alt="Counselity" id="logoId">
+    <path d="M8.235 1.559a.5.5 0 0 0-.47 0l-7.5 4a.5.5 0 0 0 0 .882L3.188 8 .264 9.559a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882L12.813 8l2.922-1.559a.5.5 0 0 0 0-.882l-7.5-4zM8 9.433 1.562 6 8 2.567 14.438 6 8 9.433z"/>
+  </svg>
+  <span class="ms-1 fw-bolder">Counselity</span>
+</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+    <a class="nav-link" href="index.html" aria-label="Brings you to the frontpage">
+      Home
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="AboutUs.html">
+      About us
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="Services.html">
+      Services
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="Team.html">
+      Team
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="Internship.html">
+      Internship Program
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="ContactUs.html">
+    Contact Us
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="ClientTestimonials.html">
+      Testimonials
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="blogs.html">
+      Blogs
+    </a>
+  </li>
+    </ul>
+      <!-- <a href="https://templatedeck.com" data-splitbee-event="Click Download" aria-label="Download this template" class="link-dark pb-1 link-fancy me-2">
+        Download this Template       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download ms-1" viewBox="0 0 16 16">
+                <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+              </svg>
+      </a> -->
+
+    </div>
+</div>
+</nav>
+
+    <main>
+
+
+
+<!-- Approach -->
+<div class="py-vh-4 bg-gray-100 w-100 overflow-hidden" id="aboutus">
+  <div class="container">  
+<div class="row d-flex justify-content-between align-items-center">
+<div class="col-lg-6 mb-6">
+  <h2 class=" fw-bold">BLOGS</h2>
+  <h4 class="py-2 border-top border-dark" data-aos="fade-left">Discover Daily Reflections</h4>
+ <p  data-aos="fade-left" data-aos-delay="200">A Sanctuary for Serenity and Growth. Join Us on a Journey of Mindfulness and Self-Discovery as We Explore the Pathways to Inner Peace and Emotional Resilience Through Gentle Reflections and Thoughtful Insights on Life's Journey.</p>
+</div>
+<div class="col-lg-6">
+  <div class="row gx-5 d-flex">
+    <div class="col-md-5 offset-md-1">
+      <div class="shadow ratio ratio-1x1 rounded bg-cover mt-5 bp-center float-end" data-aos="fade-up" style="background-image: url(img/blog2.jpg);">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="col-12 shadow ratio rounded bg-cover mt-5 bp-center" data-aos="fade-left" style="background-image: url(img/blog.jpg);--bs-aspect-ratio: 150%;">
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+  </div>
+</div>
+
+<div class="blog">
+
+  <div class="blog_wrapper">
+
+    <div class="blog_item">
+      <a href="Unravelling.html">
+        <div class="bi_img"><img src="https://source.unsplash.com/random/300"></div>
+        <div class="bi_title caps">Unravelling the Complexities of Helicopter Parenting</div>
+        <div class="bi_content">Helicopter parenting, a term coined to describe a style of
+          parenting characterized by excessive hovering and control over
+          a child&#39;s life, has garnered significant attention and scrutiny in
+          recent years. This phenomenon, while well-intentioned in
+          many cases, has raised concerns regarding its long-term impact
+          on children&#39;s development and independence. To understand
+          the secrets behind helicopter parenting, it is essential to delve
+          into its origins, underlying motivations, and potential
+          consequences.</div>
+        <div class="reading_time" >5 MIN READ</div>
+      </a>
+    </div>
+    <div class="blog_item">
+      <a href="science.html">
+        <div class="bi_img"><img src="https://source.unsplash.com/random/301"></div>
+        <div class="bi_title">UNRAVELING THE PATH TO A JOYFUL LIFE</div>
+        <div class="bi_content">In this fast-paced world, where stress and anxiety seem to be ever-present, it is essential to understand the science of happiness and how it can positively impact our lives. Today, I want to shed light on the importance of pursuing joy and well-being and you can be the reason for your happiness. But the first question that comes into my mind is “What is Happiness?” The quest to define happiness has led to a myriad of interpretations. </div>
+        <div class="reading_time">5 MIN READ</div>
+      </a>
+    </div>
+    <div class="blog_item">
+      <a href="SelfDoubtandAffirmation.html">
+        <div class="bi_img"><img src="https://source.unsplash.com/random/302"></div>
+        <div class="bi_title caps">Self-Doubt and Affirmation</div>
+        <div class="bi_content">Self-doubt and affirmation exist in a delicate dance within the human psyche, shaping our perceptions of ourselves and influencing our behaviors, choices, and overall well-being. While self-doubt can hinder our confidence and hold us back from realizing our full potential, affirmation serves as a powerful antidote, nurturing our self-worth and empowering us to embrace our strengths and capabilities. Understanding the intricate relationship between self-doubt and affirmation is essential for cultivating resilience, confidence, and a positive self- image. </div>
+        <div class="reading_time">5 MIN READ</div>
+      </a>
+    </div>
+    <div class="blog_item">
+      <a href="NurturingLove.html">
+        <div class="bi_img"><img src="https://source.unsplash.com/random/303"></div>
+        <div class="bi_title caps">Nurturing Love:</div>
+        <div class="bi_content">Love is a universal language, but the way we express and receive love
+          can vary greatly from person to person. Dr. Gary Chapman&#39;s concept of
+          the Five Love Languages offers valuable insight into how individuals
+          perceive and demonstrate love in relationships. By understanding and
+          speaking each other&#39;s love languages, we can nurture and strengthen our
+          connections with our partners.</div>
+        <div class="reading_time" >5 MIN READ</div>
+      </a>
+    </div>
+    <div class="blog_item">
+      <a href="NavigatingFOMO.html">
+        <div class="bi_img"><img src="https://source.unsplash.com/random/304"></div>
+        <div class="bi_title caps">Navigating the Age of FOMO</div>
+        <div class="bi_content">In today&#39;s hyper-connected world, the fear of missing out has
+          become a pervasive phenomenon, influencing how we interact
+          with social media, make decisions, and perceive our own lives.
+          It is characterized by an intense desire to be constantly
+          connected and involved in what others are doing, can lead to
+          anxiety, dissatisfaction, and a distorted sense of reality. To
+          effectively navigate the age of FOMO, it is crucial to
+          understand its origins, recognize its impact, and develop
+          strategies for managing its influence on our lives.</div>
+        <div class="reading_time" >5 MIN READ</div>
+      </a>
+    </div>
+    <div class="blog_item">
+      <a href="Advocacy.html">
+        <div class="bi_img"><img src="https://source.unsplash.com/random/305"></div>
+        <div class="bi_title caps">ADVOCACY FOR MENTAL HEALTH</div>
+        <div class="bi_content">In this era of digital age, the importance of mental health cannot be overstated. After Covid-19, we’ve started focussing on our physical health but the mental health needs to get the same amount of attention. It is imperative to advocate for mental health. It is after all, an integral part of overall well-being but it still remains stigmatized and neglected. Let us explore the significance of advocating mental health awareness while we also address the stigma attached to it and how it will benefit individuals and society as a whole.
+        </div>
+        <div class="reading_time" >5 MIN READ</div>
+      </a>
+    </div>
+    <div class="blog_item">
+      <a href="EmbracingImperfection.html">
+        <div class="bi_img"><img src="https://source.unsplash.com/random/306"></div>
+        <div class="bi_title caps">Embracing Imperfection: Overcoming the Tyranny of Perfectionism
+        </div>
+        <div class="bi_content">Perfection is a myth. It is an unattainable ideal that we chase, often at the expense of own happiness and success.
+          In a world that often glorifies perfection, it’s easy to fall into the trap of perfectionism- a relentless pursuit of flawlessness that can take a toll on our mental and emotional wellbeing. However, by embracing imperfection and letting go of the need to be perfect, we can cultivate greater mental wellness and inner peace. 
+          </div>
+        <div class="reading_time" >5 MIN READ</div>
+      </a>
+    </div>
+    <div class="blog_item">
+      <a href="FindingBalance.html">
+        <div class="bi_img"><img src="https://source.unsplash.com/random/307"></div>
+        <div class="bi_title">Finding Balance: The
+
+          Intersection of Mental Health
+          
+          and Digital Detox</div>
+        <div class="bi_content">In today&#39;s hyper-connected world, where smartphones
+          are ubiquitous and social media platforms never sleep,
+          the concept of a digital detox has gained significant
+          traction. But what exactly is a digital detox, and how
+          does it relate to mental health?</div>
+        <div class="reading_time" >5 MIN READ</div>
+      </a>
+    </div>
+  </div>
+</div>
+
+</main>
+
+<footer>
+  <div class="container small border-top">
+    <div class="row py-5 d-flex justify-content-between">
+
+<div class="col-12 col-lg-6 col-xl-3 border-end p-5">
+  <img src="img/logo.png" alt="Counselity" id="logoId">
+    <path d="M8.235 1.559a.5.5 0 0 0-.47 0l-7.5 4a.5.5 0 0 0 0 .882L3.188 8 .264 9.559a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882L12.813 8l2.922-1.559a.5.5 0 0 0 0-.882l-7.5-4zM8 9.433 1.562 6 8 2.567 14.438 6 8 9.433z"/>
+  </svg>
+  <address class="text-secondary mt-3">
+    <strong>Counselity, Inc.</strong><br>
+    Hauz Khas | Dwarka | Indirapuram | Gurugram | Faridabad<br>
+    <abbr title="Phone">P:</abbr>
+    +91 8448505990
+  </address>
+</div>
+<div class="col-12 col-lg-6 col-xl-3 border-end p-5">
+  <h3 class="h6 mb-3">Menu</h3>
+  <ul class="nav flex-column">
+    <li class="nav-item">
+      <a class="nav-link link-secondary ps-0" aria-current="page" href="index.html">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link link-secondary ps-0" href="AboutUs.html">About Us</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link link-secondary ps-0" href="Services.html">Services</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link link-secondary ps-0" href="#">Blogs</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link link-secondary ps-0" href="#">Team</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link link-secondary ps-0" href="Internship.html">Intership Program</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link link-secondary ps-0" href="ClientTestimonials.html">Client Testimonials</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link link-secondary ps-0" href="ContactUs.html">Contact Us</a>
+    </li>
+  </ul>
+</div>
+<div class="col-12 col-lg-6 col-xl-3 border-end p-5">
+  <h3 class="h6 mb-3">Reading</h3>
+  <ul class="nav flex-column">
+    <li class="nav-item">
+      <a class="nav-link link-secondary ps-0" aria-current="page" href="blogs.html">Blogs</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link link-secondary ps-0" href="#">Virtual Library</a>
+    </li>
+
+  </ul>
+</div>
+
+</div>
+</div>  
+</footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/aos.js"></script>
+ <script>
+ AOS.init({
+   duration: 800, // values from 0 to 3000, with step 50ms
+ });
+ </script>
+
+ <script>
+  let scrollpos = window.scrollY
+  const header = document.querySelector(".navbar")
+  const header_height = header.offsetHeight
+
+  const add_class_on_scroll = () => header.classList.add("scrolled", "shadow-sm")
+  const remove_class_on_scroll = () => header.classList.remove("scrolled", "shadow-sm")
+
+  window.addEventListener('scroll', function() {
+    scrollpos = window.scrollY;
+
+    if (scrollpos >= header_height) { add_class_on_scroll() }
+    else { remove_class_on_scroll() }
+
+    console.log(scrollpos)
+  })
+</script>
+
+  </body>
+</html>

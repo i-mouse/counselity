@@ -1,0 +1,299 @@
+<!doctype html>
+<html class="h-100" lang="en">
+
+  <head>
+      <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+  <meta name="description" content="A growing collection of ready to use components for the CSS framework Bootstrap 5">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon.png">
+  <meta name="author" content="Holger Koenemann">
+  <meta name="generator" content="Eleventy v2.0.0">
+  <meta name="HandheldFriendly" content="true">
+  <title>Counselity</title>
+  <link rel="stylesheet" href="css/theme.min.css">
+  <link rel="stylesheet" href="css/style.css">
+   <style>
+
+/* inter-300 - latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local(''),
+       url('./fonts/inter-v12-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('./fonts/inter-v12-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local(''),
+       url('./fonts/inter-v12-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('./fonts/inter-v12-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local(''),
+       url('./fonts/inter-v12-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('./fonts/inter-v12-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+</style>
+
+  </head>
+
+  <body data-bs-spy="scroll" data-bs-target="#navScroll">
+
+    <nav id="navScroll" class="navbar navbar-expand-lg navbar-light fixed-top" tabindex="0">
+  <div class="container">
+    <a class="navbar-brand pe-4 fs-4" href="index.html">
+      <img src="img/logo.png" alt="Counselity" id="logoId">
+    <path d="M8.235 1.559a.5.5 0 0 0-.47 0l-7.5 4a.5.5 0 0 0 0 .882L3.188 8 .264 9.559a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882L12.813 8l2.922-1.559a.5.5 0 0 0 0-.882l-7.5-4zM8 9.433 1.562 6 8 2.567 14.438 6 8 9.433z"/>
+  </svg>
+  <span class="ms-1 fw-bolder">Counselity</span>
+</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+    <a class="nav-link" href="index.html" aria-label="Brings you to the frontpage">
+      Home
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="AboutUs.html">
+      About us
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="Services.html">
+     Services
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="Team.html">
+      Team
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="Internship.html">
+      Internship Program
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="ContactUs.html">
+    Contact Us
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="ClientTestimonials.html">
+      Testimonials
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="blogs.html">
+      Blogs
+    </a>
+  </li>
+    </ul>
+      <!-- <a href="https://templatedeck.com" data-splitbee-event="Click Download" aria-label="Download this template" class="link-dark pb-1 link-fancy me-2">
+        Download this Template       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download ms-1" viewBox="0 0 16 16">
+                <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+              </svg>
+      </a> -->
+
+    </div>
+</div>
+</nav>
+
+    <main>
+
+<div class="py-vh-4 bg-gray-100 w-100 overflow-hidden" id="aboutus">
+  <div class="container">
+      
+<div class="row d-flex justify-content-between align-items-center">
+  <div class="col-lg-4">
+  <div class="row gx-5 d-flex">
+    <!-- <div class="col-md-11">
+      <div class="shadow ratio ratio-16x9 rounded bg-cover bp-center align-self-end" data-aos="fade-right" style="background-image: url(img/webp/people15.webp);--bs-aspect-ratio: 50%;">
+      </div>
+    </div> -->
+    <div class="col-md-8">
+      <div class="col-12 shadow ratio rounded bg-cover mt-5 bp-center" data-aos="fade-left" style="background-image: url(img/blogreading.jpg);--bs-aspect-ratio: 150%;">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-lg-8">
+  <h3 class="py-4 border-bottom border-dark caps" data-aos="fade-left">UNRAVELING THE PATH TO A JOYFUL LIFE</h3>
+  <p data-aos="fade-left" data-aos-delay="200">In this fast-paced world, where stress and anxiety seem to be ever-present,
+     it is essential to understand the science of happiness and how it can positively impact our lives. Today, I want to shed 
+     light on the importance of pursuing joy and well-being and you can be the reason for your happiness. But the first
+      question that comes into my mind is “What is Happiness?” The quest to define happiness has led to a myriad of 
+      interpretations. Psychologically, it’s often linked to ‘subjective well-being’ — a combination of life satisfaction,
+       frequent positive emotions, and relatively few negative ones. Martin Seligman, a pioneer in Positive Psychology,
+        proposes the PERMA model, which suggests that happiness comprises Positive emotions, Engagement, Relationships,
+         Meaning, and Accomplishment. These components offer a comprehensive view of what constitutes a fulfilled life.
+  </p>
+  <p data-aos="fade-left" data-aos-delay="200">Like many others, do you also believe you need a certain list of items in order to be truly happy? 
+    Our society in stills in us the desire for many externals, like power, fame, money, success, appearance, and passionate relationships. 
+     But are they indeed the secrets to joy? 
+  </p>
+  
+  <p data-aos="fade-left" data-aos-delay="200">According to the research the answer would be a big no, at least when it comes to long-term happiness.
+     A prestigious award, a big raise, an exciting new relationship, a fancy new car, losing weight, these things can make us feel great at first, 
+     but the thrill doesn’t last very long. Us, human beings are quick to adapt to new circumstances—a quality that has helped us survive and thrive. 
+     But it also means that the positive things that initially make us happier soon become our new normal and we return to our old happiness baseline
+  </p>
+
+  <p data-aos="fade-left" data-aos-delay="200">However, researchers in the field of positive psychology have found that you can genuinely
+     increase your happiness and overall satisfaction with life—and it doesn’t require a winning lottery ticket or some other drastic change
+      of circumstances. What it takes is an inner change of perspective and attitude. And that’s truly good news, because it’s something anyone can do.
+  </p>
+  <p data-aos="fade-left" data-aos-delay="200"><b>Gratitude</b>One of the fundamental principles of happiness lies in gratitude. Research 
+    indicates that practicing gratitude can lead to profound improvements in mental health and life satisfaction. Simply taking time each
+     day to acknowledge and appreciate the blessings in our lives can reframe our perspectives and foster a sense of abundance. Whether 
+     through journaling, reflecting, or expressing thanks to others, incorporating gratitude into daily routines can cultivate a lasting sense of fulfilment.
+  </p>
+  <p data-aos="fade-left" data-aos-delay="200"><b>Meaningful connections</b>
+    Another pivotal aspect of happiness centres around meaningful connections with others. Humans are inherently social beings, and nurturing 
+    relationships plays a crucial role in our well-being. Cultivating authentic connections, fostering empathy, and prioritizing quality time
+     with loved ones can significantly contribute to our overall happiness. Engaging in acts of kindness and altruism not only strengthens 
+     interpersonal bonds but also generates a profound sense of purpose and fulfilment.
+  </p>
+  <p data-aos="fade-left" data-aos-delay="200"> <b>Self-Care</b> Furthermore, the pursuit of happiness encompasses the importance of self-care and mindfulness.
+     In today's fast-paced world, it's easy to become consumed by stress and obligations. However, prioritizing self-care practices such as mindfulness meditation,
+      adequate sleep, regular exercise, and healthy nutrition can profoundly impact our emotional resilience and well-being. Mindfulness techniques empower
+       individuals to cultivate present moment awareness, manage stress effectively, and savour life's simple pleasures.
+  </p>
+  <p data-aos="fade-left" data-aos-delay="200"> <b>Goals that comes within you</b> Moreover, the science of happiness emphasizes the significance 
+    of pursuing intrinsic goals over extrinsic ones. While external achievements and material possessions may provide temporary satisfaction,
+     long-term happiness stems from pursuits aligned with our values, passions, and intrinsic motivations. Engaging in activities that spark joy, foster
+      personal growth, and contribute to a sense of purpose can lead to enduring fulfilment and life satisfaction.
+ </p>
+ <p data-aos="fade-left" data-aos-delay="200"> <b>Resilience</b>Additionally, embracing a positive mind-set and resilience in the face of adversity
+   is integral to happiness. Life is filled with inevitable challenges and setbacks, yet our ability to navigate these obstacles with optimism and 
+   resilience profoundly influences our well-being. Cultivating a growth mind-set, reframing negative experiences as opportunities for growth, 
+   and practicing self-compassion are essential tools for building emotional resilience and fostering happiness in the face of adversity.
+</p>
+<p data-aos="fade-left" data-aos-delay="200">In essence, the science of happiness offers a roadmap for cultivating joy and well-being in our lives. 
+  By embracing gratitude, fostering meaningful connections, prioritizing self-care, pursuing intrinsic goals, and cultivating resilience, we can embark on
+  a transformative journey towards a more fulfilling and satisfying existence. As we integrate these evidence-based strategies into our daily lives,
+   we unlock the profound potential for happiness that resides within each of us.
+</p>
+<p data-aos="fade-left" data-aos-delay="200">In conclusion, happiness is not merely a fleeting emotion but a state of being that can be nurtured
+   and cultivated through intentional actions and mind-set shifts. By leveraging the science of happiness, we empower ourselves to lead more fulfilling,
+    meaningful lives filled with joy, gratitude, and purpose. Let us embark on this journey together, embracing the transformative power of happiness and 
+    unlocking our true potential for well-being and fulfilment.
+</p>
+</div>
+</div>
+
+  </div>
+</div>
+
+    </main>
+
+    <footer>
+      <div class="container small border-top">
+        <div class="row py-5 d-flex justify-content-between">
+    
+    <div class="col-12 col-lg-6 col-xl-3 border-end p-5">
+      <img src="img/logo.png" alt="Counselity" id="logoId">
+        <path d="M8.235 1.559a.5.5 0 0 0-.47 0l-7.5 4a.5.5 0 0 0 0 .882L3.188 8 .264 9.559a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882L12.813 8l2.922-1.559a.5.5 0 0 0 0-.882l-7.5-4zM8 9.433 1.562 6 8 2.567 14.438 6 8 9.433z"/>
+      </svg>
+      <address class="text-secondary mt-3">
+        <strong>Counselity, Inc.</strong><br>
+        Hauz Khas | Dwarka | Indirapuram | Gurugram | Faridabad<br>
+        <abbr title="Phone">P:</abbr>
+        +91 8448505990
+      </address>
+    </div>
+    <div class="col-12 col-lg-6 col-xl-3 border-end p-5">
+      <h3 class="h6 mb-3">Menu</h3>
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link link-secondary ps-0" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-secondary ps-0" href="AboutUs.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-secondary ps-0" href="Services.html">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-secondary ps-0" href="#">Blogs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-secondary ps-0" href="#">Team</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-secondary ps-0" href="Internship.html">Intership Program</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-secondary ps-0" href="ClientTestimonials.html">Client Testimonials</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-secondary ps-0" href="ContactUs.html">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+   <div class="col-12 col-lg-6 col-xl-3 border-end p-5">
+  <h3 class="h6 mb-3">Reading</h3>
+  <ul class="nav flex-column">
+    <li class="nav-item">
+      <a class="nav-link link-secondary ps-0" aria-current="page" href="blogs.html">Blogs</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link link-secondary ps-0" href="#">Virtual Library</a>
+    </li>
+
+  </ul>
+</div>
+
+    </div>
+    </div>  
+    </footer>
+    
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/aos.js"></script>
+ <script>
+ AOS.init({
+   duration: 800, // values from 0 to 3000, with step 50ms
+ });
+ </script>
+
+ <script>
+  let scrollpos = window.scrollY
+  const header = document.querySelector(".navbar")
+  const header_height = header.offsetHeight
+
+  const add_class_on_scroll = () => header.classList.add("scrolled", "shadow-sm")
+  const remove_class_on_scroll = () => header.classList.remove("scrolled", "shadow-sm")
+
+  window.addEventListener('scroll', function() {
+    scrollpos = window.scrollY;
+
+    if (scrollpos >= header_height) { add_class_on_scroll() }
+    else { remove_class_on_scroll() }
+
+    console.log(scrollpos)
+  })
+</script>
+
+  </body>
+</html>
