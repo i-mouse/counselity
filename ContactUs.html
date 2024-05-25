@@ -221,29 +221,27 @@
       <div class="col-12 col-lg-6" style=" margin-top: 10px;"  data-aos="fade-left">
         <div class="bg-white border rounded shadow-sm overflow-hidden">
 
-          <form action="#!">
+          <form id="contact-form">
             <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
               <div class="col-12">
                 <label for="fullname" class="form-label mt-4">Full Name <span class="text-danger">*</span></label>
-                <input type="text" class="form-control" id="fullname" name="fullname" value="" required>
+                <input type="text" class="form-control" id="fullname" name="fullname" required>
               </div>
               <div class="col-12 col-md-6">
                 <label for="email" class="form-label mt-4">Email <span class="text-danger">*</span></label>
                 <div class="input-group">
-                 
-                  <input type="email" class="form-control" id="email" name="email" value="" required>
+                  <input type="email" class="form-control" id="email" name="email" required>
                 </div>
               </div>
               <div class="col-12 col-md-6">
                 <label for="phone" class="form-label mt-4">Phone Number</label>
                 <div class="input-group">
-           
-                  <input type="tel" class="form-control" id="phone" name="phone" value="">
+                  <input type="tel" class="form-control" id="phone" name="phone">
                 </div>
               </div>
               <div class="col-12">
                 <label for="subject" class="form-label mt-4">Subject <span class="text-danger">*</span></label>
-                <input type="text" class="form-control" id="subject" name="subject" value="" required>
+                <input type="text" class="form-control" id="subject" name="subject" required>
               </div>
               <div class="col-12">
                 <label for="message" class="form-label mt-4">Message <span class="text-danger">*</span></label>
@@ -251,12 +249,12 @@
               </div>
               <div class="col-12">
                 <div class="d-grid">
-                  <a href="#" class="btn btn-xl shadow me-3 rounded-0 my-5" style="background: #d4aa9c;">BOOK A FREE CALL</a>
-                  <!-- <button class="btn btn-xl shadow me-3 rounded-0 my-5 btnBackground" type="submit">Send Message</button> -->
+                  <button class="btn btn-xl shadow me-3 rounded-0 my-5" style="background: #d4aa9c;" type="submit">BOOK A FREE CALL</button>
                 </div>
               </div>
             </div>
           </form>
+
 
         </div>
       </div>
@@ -351,6 +349,28 @@
 
     console.log(scrollpos)
   })
+</script>
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript">
+  (function() {
+    emailjs.init("HKe2jDdMWCCpuyE7C"); // Replace "YOUR_USER_ID" with your EmailJS user ID
+  })();
+</script>
+
+
+<script type="text/javascript">
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    emailjs.sendForm('_wecareCounselityService', 'template_grnr6oc', this)
+      .then(function() {
+        console.log('SUCCESS!');
+        alert('Message sent successfully!');
+      }, function(error) {
+        console.log('FAILED...', error);
+        alert('Failed to send the message. Please try again later.');
+      });
+  });
 </script>
 
   </body>
