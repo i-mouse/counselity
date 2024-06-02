@@ -21,7 +21,7 @@ margin-bottom: 1px;
   margin-bottom: 13rem !important;
 } */
 .servicewidth{
-  width: 33%;
+  /* width: 33%; */
 }
 .servicewidth :hover{
  background: #c4fae2;
@@ -50,3 +50,39 @@ margin-bottom: 1px;
 #logoId{
   width: 25%;
 }
+
+@media only screen and (max-width: 991px) {
+  html:not(.no-js) [data-aos^=fade][data-aos^=fade] {
+     opacity: 1; 
+     transition-property: none, none; 
+}
+html:not(.no-js) [data-aos=fade-left] {
+   transform:none; 
+}
+#aboutus{
+  margin-top: 70px;
+}
+#hometitle{
+  text-align: center;
+  background: #6b6b6ba6;
+  color: #fff;
+}
+.reverse-mobile {
+  flex-direction: column-reverse;
+  }
+  .boxfixsize{
+    height: 50%;
+    width: 100%;
+  }
+  .formobile .col-4{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+#aboutus{
+  margin-top: 70px;
+}
+}
+
