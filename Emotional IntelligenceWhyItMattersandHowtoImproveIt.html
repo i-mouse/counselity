@@ -1,0 +1,336 @@
+<!doctype html>
+<html class="h-100" lang="en">
+
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NYCMWDS7J1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NYCMWDS7J1');
+</script>
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+      <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+  <meta name="description" content="A growing collection of ready to use components for the CSS framework Bootstrap 5">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon.png">
+  <meta name="author" content="Holger Koenemann">
+  <meta name="generator" content="Eleventy v2.0.0">
+  <meta name="HandheldFriendly" content="true">
+  <title>Counselity</title>
+  <link rel="stylesheet" href="css/theme.min.css">
+  <link rel="stylesheet" href="css/style.css">
+   <style>
+
+/* inter-300 - latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local(''),
+       url('./fonts/inter-v12-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('./fonts/inter-v12-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local(''),
+       url('./fonts/inter-v12-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('./fonts/inter-v12-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local(''),
+       url('./fonts/inter-v12-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('./fonts/inter-v12-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+</style>
+
+  </head>
+
+  <body data-bs-spy="scroll" data-bs-target="#navScroll">
+
+    <nav id="navScroll" class="navbar navbar-expand-lg navbar-light fixed-top" tabindex="0">
+  <div class="container">
+    <a class="navbar-brand pe-4 fs-4" href="index.html">
+      <img src="img/logo.png" alt="Counselity" id="logoId">
+    <path d="M8.235 1.559a.5.5 0 0 0-.47 0l-7.5 4a.5.5 0 0 0 0 .882L3.188 8 .264 9.559a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882L12.813 8l2.922-1.559a.5.5 0 0 0 0-.882l-7.5-4zM8 9.433 1.562 6 8 2.567 14.438 6 8 9.433z"/>
+  </svg>
+  <span class="ms-1 fw-bolder">Counselity</span>
+</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+    <a class="nav-link" href="index.html" aria-label="Brings you to the frontpage">
+      Home
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="AboutUs.html">
+      About us
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="Services.html">
+     Services
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="Team.html">
+      Team
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="Internship.html">
+      Internship Program
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="ContactUs.html">
+    Contact Us
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="ClientTestimonials.html">
+      Testimonials
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="blogs.html">
+      Blogs
+    </a>
+  </li>
+    </ul>
+      <!-- <a href="https://templatedeck.com" data-splitbee-event="Click Download" aria-label="Download this template" class="link-dark pb-1 link-fancy me-2">
+        Download this Template       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download ms-1" viewBox="0 0 16 16">
+                <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+              </svg>
+      </a> -->
+
+    </div>
+</div>
+</nav>
+
+    <main>
+
+<div class="py-vh-4 bg-gray-100 w-100 overflow-hidden" id="aboutus">
+  <div class="container">
+      
+<div class="row d-flex justify-content-between align-items-center">
+  <div class="col-lg-4">
+  <div class="row gx-5 d-flex">
+    <!-- <div class="col-md-11">
+      <div class="shadow ratio ratio-16x9 rounded bg-cover bp-center align-self-end" data-aos="fade-right" style="background-image: url(img/webp/people15.webp);--bs-aspect-ratio: 50%;">
+      </div>
+    </div> -->
+    <div class="col-md-8">
+      <div class="col-12 shadow ratio rounded bg-cover mt-5 bp-center" data-aos="fade-left" style="background-image: url(img/blogreading.jpg);--bs-aspect-ratio: 150%;">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-lg-8">
+  <h3 class="py-4 border-bottom border-dark caps" data-aos="fade-left">How to recover from psychological trauma?  </h3>
+  <p data-aos="fade-left" data-aos-delay="200">
+    Life doesn’t come with a manual, and sometimes, it leaves scars—scars that are unseen but deeply felt. Psychological trauma is one such invisible wound, often resulting from distressing experiences that shake the core of our emotional and mental stability. Whether it’s from childhood trauma, a severe accident, abuse, or any traumatic event, the road to recovery can feel daunting.  Whether you're dealing with unresolved childhood trauma or seeking to heal from a recent traumatic event, the journey to healing is one that you can take, step by step. You’re here, reading this, which means you’ve already begun. This guide will walk you through a comprehensive journey of understanding trauma and seeking help from the best psychologist near me.
+</p>
+
+  <h5>Understanding Psychological Trauma: What Does it Really Mean?</h5>
+  <p data-aos="fade-left" data-aos-delay="200">
+    Unlike physical injuries, there’s no bandage or cast for trauma. It lingers in the mind and heart, often in ways we don’t fully understand. Trauma can come from an array of sources, it might be due to a sudden accident, a natural disaster, violence, abuse, or even the unexpected loss of a loved one. For many of us, though, childhood trauma has a lasting impact that we carry into our adult lives. Emotional neglect, physical abuse, or manipulation during childhood can create deeper wounds that affect how we see ourselves and everybody around us. It’s no surprise that as adults, these early experiences can lead to anxiety, depression, or struggles with relationships. But here’s the thing: healing from trauma starts with recognizing that these experiences are real, and that we deserve to heal. Sometimes, we need help finding our way through the pain, and that’s where the right support—whether it’s from loved ones or finding the best psychologist near me becomes so important. 
+  </p>
+
+  <h5>The Impact of Trauma on Your Mind and Body</h5>
+  <p data-aos="fade-left" data-aos-delay="200">
+   Trauma doesn’t just reside in your mind—it impacts your entire being. You might notice physical symptoms such as chronic pain, fatigue, or a weakened immune system, alongside emotional struggles like anxiety, depression, and a constant sense of danger. One of the most challenging aspects of trauma is how it rewires your brain. When faced with trauma, your brain shifts into "survival mode," constantly scanning for threats, making it difficult to feel calm or safe. For those dealing with the same childhood trauma, this heightened state of alertness may have become their default state, making it hard to recognize and trust safety when it does appear. However, it’s important to understand that your brain, while impacted by trauma, is also incredibly resilient. Neuroplasticity—your brain's ability to form new connections and heal—means that recovery is possible. The key is learning how to rewire those survival-based pathways and create new patterns of thought that promote healing and peace.
+  </p>
+  
+  <h5>Signs That Trauma is Affecting You</h5>
+  <p data-aos="fade-left" data-aos-delay="200">
+    Recognizing the signs of trauma can be the first step toward healing. While everyone responds to trauma differently, there are some common indicators:
+</p>
+
+<strong><h6>Emotional Numbness: </h6></strong>
+<p data-aos="fade-left" data-aos-delay="200">Feeling disconnected from yourself and others, unable to experience joy, or having difficulty processing emotions.</p>
+  
+
+<strong><h6>Flashbacks or Intrusive Memories</h6></strong>
+  <p data-aos="fade-left" data-aos-delay="200">Reliving the traumatic event(s) in vivid detail, even years later, often triggered by seemingly unrelated experiences.</p>
+
+
+  <strong><h6>Hypervigilance: </h6></strong>
+  <p data-aos="fade-left" data-aos-delay="200">
+    Constantly feeling on edge or unsafe, even in environments where there is no real threat.
+  </p>
+    
+<strong><h6>Avoidance: </h6></strong>
+ <p data-aos="fade-left" data-aos-delay="200"> 
+   Avoiding places, people, or activities that remind you of the trauma.
+   </p>
+
+  <strong><h6>Sleep Disturbances:</h6></strong>
+   <p data-aos="fade-left" data-aos-delay="200"> 
+     Difficulty falling asleep or staying asleep, plagued by nightmares or restless sleep.
+   </p>
+  
+  
+  <h5>How to Recover from Psychological Trauma</h5>
+  <p data-aos="fade-left" data-aos-delay="200">
+    Recovery from trauma is deeply personal , there’s no “one size fits all” solution, but there are general steps enumerated below that can guide you through your healing journey
+</p>
+  
+  
+
+  <strong><h6>1. Acknowledging Your Trauma</h6></strong>
+  <p data-aos="fade-left" data-aos-delay="200"> 
+    The first step in healing is to acknowledge what happened. It sounds simple, but denial and avoidance are common coping mechanisms for trauma survivors. Whether the trauma stems from an event in childhood or a more recent experience, it’s essential to name it, confront it, and own your story. Many people who have experienced childhood trauma may minimize their experiences, telling themselves, "It wasn't that bad," or "I should be over it by now." If you’ve found yourself searching for the "best psychologist near me" for support, that is already an act of acknowledging your trauma. This step, though often painful, is crucial to recovery.
+</p>
+
+  <strong><h6>2. Seek Professional Help</h6></strong>
+  <p data-aos="fade-left" data-aos-delay="200">
+    While self-help techniques and personal growth can play a role in trauma recovery, working with a qualified mental health professional is often necessary, especially for deep-rooted or childhood trauma. If you've been trying to manage the symptoms of trauma on your own and it feels overwhelming, seeking help from the best psychologist near me is a good starting point. A therapist who specializes in trauma can guide you through techniques like Cognitive Behavioral Therapy (CBT), Eye Movement Desensitization and Reprocessing (EMDR), or Somatic Experiencing. These methods are designed to help you process traumatic memories in a way that no longer allows them to dominate your emotional and physical wellbeing.
+  </p>
+
+   <strong><h6>3. Build a Support System</h6></strong>
+<p data-aos="fade-left" data-aos-delay="200">
+Healing from trauma isn’t just a mental exercise—it’s a relational one, too. Surrounding yourself with a supportive network of friends, family, and professionals can provide emotional security and a sense of community. For those recovering from the same childhood trauma, this can be particularly difficult if family dynamics were part of the trauma. In these cases, creating a "chosen family" of trusted friends and supporters can be invaluable. Recovery thrives in environments where you feel safe, heard, and understood
+</p>
+
+  <strong><h6>4. Practice Mindfulness and Grounding Techniques</h6></strong>
+  <p data-aos="fade-left" data-aos-delay="200">
+    Trauma has a way of pulling us out of the present moment and into either the past or a state of hypervigilance about the future. Learning mindfulness techniques like meditation, or deep breathing, can help bring you back. For example, a simple grounding technique involves identifying five things you can see, four things you can touch, three things you can hear, two things you can smell, and one thing you can taste. These techniques are particularly helpful in calming the nervous system, especially during moments when past trauma resurfaces unexpectedly.
+  </p>
+
+  <strong><h6>5. Reconnect with Your Body</h6></strong>
+    <p data-aos="fade-left" data-aos-delay="200">
+      For many trauma survivors, the body can feel like a dangerous place. Whether through dissociation or the physical pain that can accompany emotional trauma, many people feel disconnected from their bodies. Reconnecting through gentle movement, yoga, or even simple stretches can help restore the sense of safety and ownership over your physical self. Trauma-informed yoga, in particular, is designed to help individuals reconnect with their bodies in a safe and non-triggering way. This can be a powerful tool, especially for survivors of childhood trauma, who may have learned to dissociate from their bodies as a protective mechanism.
+  </p>
+  
+<h5>Healing Takes Time And That’s Okay</h5>
+  <p data-aos="fade-left" data-aos-delay="200">
+It’s important to remember that recovery from trauma is not a race. It can take months or even years to fully heal, and that’s completely normal. Everyone’s journey is unique, and comparison to others can often be counterproductive. Thus, seeking help from a trauma-informed professional, regularly practising mindfulness, and building a strong support system are all steps that can accelerate the healing process. 
+
+  </p>
+
+<h5>Conclusion</h5>
+   <p data-aos="fade-left" data-aos-delay="200">
+     Recovering from psychological trauma is not easy, but it is possible. The journey is one that will test your strength, patience, and self-compassion, but with the right tools and support, you can reclaim your life. Whether you’re dealing with the same childhood trauma or seeking help for a more recent traumatic event, know that the power of healing resides within you. Reach out for help from the best psychologist near me, practise self-compassion, and remember to take it one day at a time. Your trauma may be part of your story, but it doesn’t define who you are.
+  
+   </p>
+</div>
+</div>
+
+  </div>
+</div>
+
+    </main>
+
+    <footer>
+      <div class="container small border-top">
+        <div class="row py-5 d-flex justify-content-between">
+    
+    <div class="col-12 col-lg-6 col-xl-3 border-end p-5">
+      <img src="img/logo.png" alt="Counselity" id="logoId">
+        <path d="M8.235 1.559a.5.5 0 0 0-.47 0l-7.5 4a.5.5 0 0 0 0 .882L3.188 8 .264 9.559a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882L12.813 8l2.922-1.559a.5.5 0 0 0 0-.882l-7.5-4zM8 9.433 1.562 6 8 2.567 14.438 6 8 9.433z"/>
+      </svg>
+      <address class="text-secondary mt-3">
+        <strong>Counselity, Inc.</strong><br>
+        Hauz Khas | Dwarka | Indirapuram | Gurugram | Faridabad<br>
+        <abbr title="Phone">P:</abbr>
+        +91 8448505990
+      </address>
+    </div>
+    <div class="col-12 col-lg-6 col-xl-3 border-end p-5">
+      <h3 class="h6 mb-3">Menu</h3>
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link link-secondary ps-0" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-secondary ps-0" href="AboutUs.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-secondary ps-0" href="Services.html">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-secondary ps-0" href="#">Blogs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-secondary ps-0" href="#">Team</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-secondary ps-0" href="Internship.html">Intership Program</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-secondary ps-0" href="ClientTestimonials.html">Client Testimonials</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-secondary ps-0" href="ContactUs.html">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+   <div class="col-12 col-lg-6 col-xl-3 border-end p-5">
+  <h3 class="h6 mb-3">Reading</h3>
+  <ul class="nav flex-column">
+    <li class="nav-item">
+      <a class="nav-link link-secondary ps-0" aria-current="page" href="blogs.html">Blogs</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link link-secondary ps-0" href="#">Virtual Library</a>
+    </li>
+
+  </ul>
+</div>
+
+    </div>
+    </div>  
+    </footer>
+    
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/aos.js"></script>
+ <script>
+ AOS.init({
+   duration: 800, // values from 0 to 3000, with step 50ms
+ });
+ </script>
+
+ <script>
+  let scrollpos = window.scrollY
+  const header = document.querySelector(".navbar")
+  const header_height = header.offsetHeight
+
+  const add_class_on_scroll = () => header.classList.add("scrolled", "shadow-sm")
+  const remove_class_on_scroll = () => header.classList.remove("scrolled", "shadow-sm")
+
+  window.addEventListener('scroll', function() {
+    scrollpos = window.scrollY;
+
+    if (scrollpos >= header_height) { add_class_on_scroll() }
+    else { remove_class_on_scroll() }
+
+    console.log(scrollpos)
+  })
+</script>
+
+  </body>
+</html>
