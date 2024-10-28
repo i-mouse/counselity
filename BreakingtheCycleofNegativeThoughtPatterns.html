@@ -1,1 +1,357 @@
+<!doctype html>
+<html class="h-100" lang="en">
+
+  <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NYCMWDS7J1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NYCMWDS7J1');
+</script>
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+      <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+  <meta name="description" content="A growing collection of ready to use components for the CSS framework Bootstrap 5">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon.png">
+  <meta name="author" content="Holger Koenemann">
+  <meta name="generator" content="Eleventy v2.0.0">
+  <meta name="HandheldFriendly" content="true">
+  <title>Counselity</title>
+  <link rel="stylesheet" href="css/theme.min.css">
+  <link rel="stylesheet" href="css/style.css">
+   <style>
+
+/* inter-300 - latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local(''),
+       url('./fonts/inter-v12-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('./fonts/inter-v12-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local(''),
+       url('./fonts/inter-v12-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('./fonts/inter-v12-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local(''),
+       url('./fonts/inter-v12-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('./fonts/inter-v12-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+</style>
+
+  </head>
+
+  <body data-bs-spy="scroll" data-bs-target="#navScroll">
+
+    <nav id="navScroll" class="navbar navbar-expand-lg navbar-light fixed-top" tabindex="0">
+  <div class="container">
+    <a class="navbar-brand pe-4 fs-4" href="index.html">
+      <img src="img/logo.png" alt="Counselity" id="logoId">
+    <path d="M8.235 1.559a.5.5 0 0 0-.47 0l-7.5 4a.5.5 0 0 0 0 .882L3.188 8 .264 9.559a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882L12.813 8l2.922-1.559a.5.5 0 0 0 0-.882l-7.5-4zM8 9.433 1.562 6 8 2.567 14.438 6 8 9.433z"/>
+  </svg>
+  <span class="ms-1 fw-bolder">Counselity</span>
+</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+    <a class="nav-link" href="index.html" aria-label="Brings you to the frontpage">
+      Home
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="AboutUs.html">
+      About us
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="Services.html">
+     Services
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="Team.html">
+      Team
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="Internship.html">
+      Internship Program
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="ContactUs.html">
+    Contact Us
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="ClientTestimonials.html">
+      Testimonials
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="blogs.html">
+      Blogs
+    </a>
+  </li>
+    </ul>
+      <!-- <a href="https://templatedeck.com" data-splitbee-event="Click Download" aria-label="Download this template" class="link-dark pb-1 link-fancy me-2">
+        Download this Template       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download ms-1" viewBox="0 0 16 16">
+                <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+              </svg>
+      </a> -->
+
+    </div>
+</div>
+</nav>
+
+    <main>
+
+<div class="py-vh-4 bg-gray-100 w-100 overflow-hidden" id="aboutus">
+  <div class="container">
+      
+<div class="row d-flex justify-content-between align-items-center">
+  <div class="col-lg-4">
+  <div class="row gx-5 d-flex">
+    <!-- <div class="col-md-11">
+      <div class="shadow ratio ratio-16x9 rounded bg-cover bp-center align-self-end" data-aos="fade-right" style="background-image: url(img/webp/people15.webp);--bs-aspect-ratio: 50%;">
+      </div>
+    </div> -->
+    <div class="col-md-8">
+      <div class="col-12 shadow ratio rounded bg-cover mt-5 bp-center" data-aos="fade-left" style="background-image: url(img/blogreading.jpg);--bs-aspect-ratio: 150%;">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-lg-8">
+  <h3 class="py-4 border-bottom border-dark caps" data-aos="fade-left">Emotional Intelligence: Why It Matters and How to Improve It </h3>
+  <p data-aos="fade-left" data-aos-delay="200">
+    Emotions often dictate our actions, decisions, and relationships more than we realise. While IQ has long been the standard for measuring intelligence, there's another equally important type of intelligence: emotional intelligence (EI). Unlike cognitive intelligence, which is measured by IQ tests, emotional intelligence involves the ability to recognize, understand, and manage our own emotions and the emotions of others which helps in improved decision-making, and shaping the overall personality. In this blog, we'll talk about the importance of emotional intelligence, its impact, and some tips to help you improve emotional intelligence it in both your personal and professional life.
+
+</p>
+
+  <h5>What Is Emotional Intelligence?</h5>
+  <p data-aos="fade-left" data-aos-delay="200">
+    Recognizing how emotions influence our thoughts and actions and using this awareness to communicate better and build stronger relationships is Emotional Intelligence. Unlike IQ, which measures cognitive ability, EQ is centered on emotional and social skills. It’s not something that you’re born with but acquire over time with a conscious effort. 
+  </p>
+
+ 
+  <p data-aos="fade-left" data-aos-delay="200">
+    Emotional intelligence encompasses several key components:
+  </p>
+  
+
+<strong><h6>1.	Self-Awareness:</h6></strong>
+<p data-aos="fade-left" data-aos-delay="200">This is the ability to recognize and understand your own emotions, strengths, weaknesses, values, and motivations. Self-aware individuals can accurately assess how their feelings impact their thoughts.</p>
+  
+
+<strong><h6>2.	Self-Regulation: </h6></strong>
+  <p data-aos="fade-left" data-aos-delay="200">
+    This refers to the ability to manage and control your emotions, especially in stressful situations. Self-regulation helps individuals stay calm and composed and avoid impulsive reactions.
+  </p>
+
+
+  <strong><h6>3.	Motivation:</h6></strong>
+  <p data-aos="fade-left" data-aos-delay="200">
+    Emotionally intelligent individuals are typically motivated by internal values rather than external rewards. They have a strong zeal to pursue goals, remain optimistic in the face of challenges, and inspire others through their dedication.
+  </p>
+    
+<strong><h6>4.	Empathy: </h6></strong>
+ <p data-aos="fade-left" data-aos-delay="200"> 
+  Empathy is the ability to understand and share the feelings of others. It involves being sensitive to others’ perspectives, and giving an appropriate response to their emotional state.
+   </p>
+
+  <strong><h6>5.	Social Skills: </h6></strong>
+   <p data-aos="fade-left" data-aos-delay="200"> 
+     These skills facilitate effective communication, conflict resolution, and relationship-building. Emotionally intelligent people are adept at navigating social complexities and fostering connections with others.
+   </p>
+  
+  
+  <h5>Why Emotional Intelligence Matters</h5>
+  <p data-aos="fade-left" data-aos-delay="200">
+    No matter how advanced technology becomes, human interactions still fosters a feeling of being alive and builds connection for the better. Whether you’re collaborating professionally with some, dealing with personal conflicts, or trying to understand a dear one’s emotion, emotional intelligence plays a crucial role. A few other reasons of why emotional intelligence matters and why you should improve emotional intelligence are enumerated below-
+</p>
+
+  <p data-aos="fade-left" data-aos-delay="200">
+    Improved Relationships: One of the biggest benefits of emotional intelligence is its ability to enhance relationships. When you can understand and empathize with others, you build stronger connections and trust. 
+  </p>  
+  
+
+  <strong><h6>Better Decision Making:</h6></strong>
+  <p data-aos="fade-left" data-aos-delay="200"> 
+    Emotional intelligence allows you to manage stress and control impulsive reactions, which can lead to better decision-making. Awareness of your emotional triggers helps you in making more informed, rational decisions, rather than reacting based on emotions.
+</p>
+
+  <strong><h6>Enhanced Leadership Skills:</h6></strong>
+  <p data-aos="fade-left" data-aos-delay="200">
+    Emotional intelligence is often what separates great leaders from mediocre ones. Leaders with high EQ are able to inspire and motivate others, create a positive work environment, and build a strong team culture. This is why emotional intelligence is now seen as one of the key traits of effective leadership.
+  </p>
+
+   <strong><h6>Mental Health Benefits: </h6></strong>
+<p data-aos="fade-left" data-aos-delay="200">
+  Importance of emotional intelligence includes better emotional understanding which is essential for mental well-being. Those with high emotional intelligence are able to build resilience and are better equipped to handle stress, anxiety, and emotional challenges which are important for a healthy state of mind. 
+</p>
+
+<h5>Common Emotional Intelligence Tips</h5>
+  <p data-aos="fade-left" data-aos-delay="200">
+    While emotional intelligence is not something that comes naturally to everyone, it can still be developed over time with these actionable emotional intelligence tips:
+  </p>
+  
+  <strong><h6>Practice Self-Awareness: </h6></strong>
+  <p data-aos="fade-left" data-aos-delay="200">
+    Self-awareness is the cornerstone of emotional intelligence. Take time to reflect on your emotions, triggers, and behaviour patterns. Track your emotional responses to different situations and think about how you could have responded differently.
+  </p>
+
+  <strong><h6>Develop Empathy:</h6></strong>
+    <p data-aos="fade-left" data-aos-delay="200">
+      Empathy is the ability to put yourself in someone else’s shoes and understand their feelings. To enhance empathy, practice active listening. Pay attention not only to what others are saying but also to their body language and emotional cues.
+  </p>
+
+  <strong><h6>Manage Stress: </h6></strong>
+<p data-aos="fade-left" data-aos-delay="200">
+Stress can cloud your judgment and cause you to react impulsively. Learning to manage stress helps you practice emotional intelligence better. When faced with a situation that triggers a strong emotional response, take a moment to pause to prevent unnecessary conflicts or try deep breathing exercises to help you stay calm.
+</p>  
+
+  <strong><h6>Improve Communication Skills:</h6></strong>
+<p data-aos="fade-left" data-aos-delay="200">
+  Clear, open communication is one of the most essential emotional intelligence tips to building strong relationships. Express your emotions in a healthy, constructive way to avoid bottling up your feelings or reacting harshly when you’re upset. Instead, use ‘I’ statements to express how you feel and what you need.
+</p>  
+
+  <strong><h6>Build Resilience: </h6></strong>
+<p data-aos="fade-left" data-aos-delay="200">
+  Emotional intelligence involves being able to bounce back from setbacks and handle adversity. Cultivate resilience by learning how to embrace failure as part of the growth process. The more resilient you become, the easier it is to maintain emotional balance during tough times.
+</p>  
+
+  
+  <p data-aos="fade-left" data-aos-delay="200">
+Listen with the objective of understanding: Make a conscious effort to pay close attention when a person communicates with you, both verbally and nonverbally. Empathy can be improved by putting yourself in someone else’s shoes and trying to understand their perspective. Engage in open conversations that allow you to connect on an emotional level.
+  </p>
+
+<h5>Conclusion</h5>
+   <p data-aos="fade-left" data-aos-delay="200">
+Emotional intelligence is not just a buzzword; it is a critical life skill that affects every life aspect be it personal or professional. Understanding why emotional intelligence matters and working actively to improve it can make all the difference and pave the way for meaningful change in your life and the lives of those around you.  
+   </p>
+</div>
+</div>
+
+  </div>
+</div>
+
+    </main>
+
+    <footer>
+      <div class="container small border-top">
+        <div class="row py-5 d-flex justify-content-between">
+    
+    <div class="col-12 col-lg-6 col-xl-3 border-end p-5">
+      <img src="img/logo.png" alt="Counselity" id="logoId">
+        <path d="M8.235 1.559a.5.5 0 0 0-.47 0l-7.5 4a.5.5 0 0 0 0 .882L3.188 8 .264 9.559a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882L12.813 8l2.922-1.559a.5.5 0 0 0 0-.882l-7.5-4zM8 9.433 1.562 6 8 2.567 14.438 6 8 9.433z"/>
+      </svg>
+      <address class="text-secondary mt-3">
+        <strong>Counselity, Inc.</strong><br>
+        Hauz Khas | Dwarka | Indirapuram | Gurugram | Faridabad<br>
+        <abbr title="Phone">P:</abbr>
+        +91 8448505990
+      </address>
+    </div>
+    <div class="col-12 col-lg-6 col-xl-3 border-end p-5">
+      <h3 class="h6 mb-3">Menu</h3>
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link link-secondary ps-0" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-secondary ps-0" href="AboutUs.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-secondary ps-0" href="Services.html">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-secondary ps-0" href="#">Blogs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-secondary ps-0" href="#">Team</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-secondary ps-0" href="Internship.html">Intership Program</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-secondary ps-0" href="ClientTestimonials.html">Client Testimonials</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-secondary ps-0" href="ContactUs.html">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+   <div class="col-12 col-lg-6 col-xl-3 border-end p-5">
+  <h3 class="h6 mb-3">Reading</h3>
+  <ul class="nav flex-column">
+    <li class="nav-item">
+      <a class="nav-link link-secondary ps-0" aria-current="page" href="blogs.html">Blogs</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link link-secondary ps-0" href="#">Virtual Library</a>
+    </li>
+
+  </ul>
+</div>
+
+    </div>
+    </div>  
+    </footer>
+    
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/aos.js"></script>
+ <script>
+ AOS.init({
+   duration: 800, // values from 0 to 3000, with step 50ms
+ });
+ </script>
+
+ <script>
+  let scrollpos = window.scrollY
+  const header = document.querySelector(".navbar")
+  const header_height = header.offsetHeight
+
+  const add_class_on_scroll = () => header.classList.add("scrolled", "shadow-sm")
+  const remove_class_on_scroll = () => header.classList.remove("scrolled", "shadow-sm")
+
+  window.addEventListener('scroll', function() {
+    scrollpos = window.scrollY;
+
+    if (scrollpos >= header_height) { add_class_on_scroll() }
+    else { remove_class_on_scroll() }
+
+    console.log(scrollpos)
+  })
+</script>
+
+  </body>
+</html>
 
